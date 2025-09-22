@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    font-family: Arial;
+}
+.headContainer{
+    height: 300px;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(204, 203, 203);
+
+}
+.menuContainer{
+    height: 100px;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.Icon{    
+    height: 100%;
+    width: 200px;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-image: url(/images/icon.png) ;
+    background-repeat: no-repeat;
+
+}
+.HomeExpSer{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.smallIcon{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homesIcon{
+    height: 60%;
+    width: 80px;
+    background-image: url(/images/homeicon.png);
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    
+}
+.ExperiencesIcon{
+    height: 60%;
+    width: 80px;
+    background-image: url(/images/balloon.png);
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+}
+.servicesIcon{
+    height: 60%;
+    width: 80px;
+    background-image: url(/images/services.png);
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+}
+.allIcon{
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+.allIcon:hover{
+    transform: scale(1.1);
+}
+.menuChar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 0;
+}
+.host{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-right: 2%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.globalIcon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color:rgba(128, 128, 128, 0.345);
+    margin-right:2%;
+    border-radius: 50%;
+}
+.MenuIcon{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color:rgba(128, 128, 128, 0.313);
+    border-radius: 50%;
+}
+.top-three:hover{
+    background-color: #e9e9e9;
+    transition: 0.5s;
+}
+
+/* input fields */
+
+.searchContainer{
+    height: 100px;
+    width: 70%;
+    background-color: white;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px 2px grey;
+    border-radius: 60px ;
+    margin-top: 150px;
+}
+
+.where {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  border-radius: 50px;
+  position: relative; 
+  z-index: 1;/* required for pseudo-element positioning */
+}
+
+.where::after {
+  content: "";
+  position: absolute;
+  top: 34%;            /* control start point */
+  bottom: 34%;         /* control end point */
+  right: 0;          /* stick to right edge */
+  width: 2px;         /* thickness of the border */
+  background-color: #e9e9e9; /* border color */
+  border-radius: 6px;  /* optional: make it smooth */
+}
+.checkIn{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-radius: 50px ;
+    position: relative;
+}
+.checkIn::after {
+  content: "";
+  position: absolute;
+  top: 34%;            
+  bottom: 34%;         
+  right: 0;           
+  width: 2px;         
+  background-color: #e9e9e9; 
+  border-radius: 6px;  
+}
+.checkOut{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-radius: 50px ;
+    position: relative;
+
+}
+.checkOut::after{
+    content: "";
+    position: absolute;
+    top: 34%;            
+    bottom: 34%;         
+    right: 0;            
+    width: 2px;         
+    background-color: #e9e9e9; 
+    border-radius: 6px;
+}
+.who{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border-radius: 50px ;
+}
+
+.Char{
+    margin: 20px 70px 5px 30px ;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.input{
+    width: 70%;
+    margin: 0 10px 0 30px ;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search:hover{
+    background-color: #e9e9e9;
+    transition: 0.5s;
+}
+.searchIconSmall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.searchIcon{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(224, 49, 95);
+    margin-right: 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.guest{
+    margin-top:15px ;
+}
+
+/* Hero Section */
+.hero-section{
+    padding: 30px;
+}
+.heading1{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.all-icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10px;
+    overflow-x: auto;
+ 
+}
+.all-icons::-webkit-scrollbar{
+    display: none;
+}
+.Icons{
+    display: flex;
+    background-image: url(/images/majorta.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 190px;
+    width: 270px;
+    border-radius: 20px;
+
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.box p {
+    margin-top: 20px;
+    width: 200px;
+    
+}
+
+footer{
+    height: 80vh;
+    width: auto;
+    background-color: #f8f8f8;
+    padding: 30px;
+}
+footer h1{
+    padding-bottom: 10px;
+    border-bottom:  1px solid rgb(204, 203, 203) ;
+}
+.footer-one{
+    display: flex;
+    margin-top: 50px;
+    gap:20%;
+}
+.footer-one p{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.footer-one a{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(56, 54, 54);
+    font-size: 1.2rem;
+}
+.footer-one a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.footer-two{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color:  rgb(41, 40, 40);
+    border-top:  1px solid rgb(204, 203, 203);
+    margin-top: 30px;
+}
+
+.two{
+    display: flex;
+    margin-left: 40%;
+    gap: 20px;
+    margin-right: 10px;
+}
