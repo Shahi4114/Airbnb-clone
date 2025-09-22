@@ -30,13 +30,12 @@ It replicates some of the core UI components of Airbnb such as the **navigation 
 
 ## 📂 Project Structure
 
-```text
-Airbnb-clone/
-├── index.html        (Main HTML file)
-├── style.css         (CSS for styling)
-├── javascript.js     (Optional JS file, empty or future use)
-├── images/           (Folder containing icons and background images)
-└── README.md         (Project documentation)
+Airbnb-clone/  
+├── index.html        (Main HTML file)  
+├── style.css         (CSS for styling)  
+├── javascript.js     (Optional JS file, empty or future use)  
+├── images/           (Folder containing icons and background images)  
+└── README.md         (Project documentation)  
 
 
 ---
